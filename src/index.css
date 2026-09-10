@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-ar: 'Cairo', 'Amiri', system-ui, -apple-system, sans-serif;
+    --font-fr: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --morocco-green: #0a3d24;
+    --morocco-red: #6b0f1a;
+    --imperial-gold: #d4af37;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #030708;
+  }
+
+  html[dir="rtl"], [dir="rtl"] {
+    font-family: var(--font-ar);
+  }
+
+  html[dir="ltr"], [dir="ltr"] {
+    font-family: var(--font-fr);
+  }
+}
+
+/* Authentic Moroccan geometric pattern and starry ambient */
+.bg-islamic-pattern {
+  background-image: radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.05) 1px, transparent 1px),
+                    radial-gradient(circle at 0% 0%, rgba(10, 61, 36, 0.08) 1.5px, transparent 1.5px),
+                    radial-gradient(circle at 100% 100%, rgba(107, 15, 26, 0.06) 1.5px, transparent 1.5px);
+  background-size: 32px 32px, 64px 64px, 48px 48px;
+}
+
+.gold-shimmer {
+  background: linear-gradient(135deg, #fdf1c7 0%, #e5c158 35%, #d4af37 60%, #997816 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.moroccan-glow {
+  box-shadow: 0 0 35px -5px rgba(10, 61, 36, 0.4), 0 0 20px -5px rgba(212, 175, 55, 0.3);
+}
+
+.gold-border {
+  border-color: rgba(212, 175, 55, 0.25);
+}
+
+.gold-border-glow:hover {
+  border-color: rgba(212, 175, 55, 0.55);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.15), 0 0 15px rgba(10, 61, 36, 0.2);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #030708;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.3);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.55);
+}
