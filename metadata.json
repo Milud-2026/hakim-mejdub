@@ -1,0 +1,6 @@
+{
+  "name": "حكيم مجذوب 🇲🇦 | Hakim Majdoub",
+  "description": "الموقع الرسمي للحكيم مجذوب بالمغرب - استماع ومواكبة روحية وتقليدية بأمانة وشفافية وبدون وعود كاذبة. Accompagnement spirituel traditionnel et écoute confidentielle.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
